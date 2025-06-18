@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-image: url(background.jpg);
+    background-size: 250px 250px; 
+}
+.yroki-img{
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+.yroki-spisok{
+    list-style-type: none;
+    display: inline-block;
+}
+/*---Меню сайта---*/
+.sitelogo{
+    width: 157px;
+    display: flex;
+}
+.navlink:hover{
+    color:#d35400
+}
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+.navlist {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0%;
+}
+.navlink{
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navlink.active{
+    font-weight: 700;
+}
+.navlink-drop.active{
+    font-weight: 700;
+}
+.menu-button{
+    border: none;
+    outline: none;
+    margin: 0;
+    background-color: white;
+    border-bottom: 3px solid #360050;
+    margin-left: 10px;
+}
+.menu-button-drop{
+    display: none;
+    position: fixed;
+    background-color: #eec2ff;
+    min-width: 10px;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+.menu-button-drop a{
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.navlink-drop{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+.menu-button-drop a:hover{
+    background-color: #eab5ff;
+}
+.menu-button-dropdown:hover .menu-button-drop{
+    display: block;
+}
+.menu-text{
+    border-bottom: 3px solid #360050;
+    margin-left: 10px;
+}
+/*---Сайт---*/
+.container{
+    max-width: 1064px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.title-text{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+.footer{
+    height: 42px;
+    background-color: #EBEBEB;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer-text{
+    vertical-align: center;
+}
+.footer-text-p{
+    font-size: 10px;
+}
+.social-site{
+    padding-right: 10px;
+}
+.social-container{
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.social-site-icon{
+    width: 34px;
+    height: 34px;
+}
+.p-text{
+    text-align: justify;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    font-size: 20px;
+    text-indent: 48px;
+}
+.college-foto{
+    max-width: 800px;
+}
+.h2-zagolovok{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-block-end: 1px;
+
+}
+/*---Цитата---*/
+.citata-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 2px solid black;
+    background-color: #FFFAFA;
+}
+.p-text-italy{
+    font-style: italic;
+    text-align: justify;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    font-size: 20px;
+    text-indent: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.citata-item-img-p{
+    font-style: italic;
+    text-align: justify;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+.citata-item-container{
+    margin-top: 32px;
+    margin-left: 128px;
+    margin-right: 128px;
+    display: flex;
+    justify-content: center;
+}
+.citata-item{
+    max-width: 250px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.citata-item-img-img{
+    height: 227px;
+}
+/*---Конец оформления цитаты---*/
+.ul-text{
+    text-align: left;
+    font-size: 20px;
+    list-style-type: circle;
+}
+.ul-text-li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+/*---Преподаватели---*/
+.teacher-container-string{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+.teacher-container-item-a{
+    text-decoration: none;
+    color: black;
+}
+.teacher-container-item{
+    width: 220px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.teacher-container-item:hover{
+    background-color: #dbdbdb;
+    transition-duration: 0.25s;
+}
+.name-teacher{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.img-teacher-foto{
+    max-height: 217px;
+}
+.teacher-modal{
+    display: none;
+}
+.teacher-modal:target{
+    display: flex;
+}
+.teacher-modal{
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+}
+.teacher-modal:target {
+    justify-content: space-around;
+    align-items: center;
+  }
+.teacher-modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+  }
+  
+.teacher-modal__content {
+    min-width: 480px;
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+.teacher-modal__close {
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    display: inline-block;
+  }
+.teacher-modal-content-container{
+    display: flex;
+}
+.teacher-modal-content-img{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex; /* Строка эта и следующая под вопросом*/
+    align-items: center;
+}
+.teacher-modal-content-text{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    max-width: 500px;
+}
+.p-modal-content-text-title{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #73616D;
+}
+.p-modal-content-text{
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+.teacher-modal-img{
+    max-height: 300px;
+}
+.ul-modal-content-text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.li-modal-content-text{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+/*---Конец блока преподавателей---*/
+/*---Блок студентов---*/
+.img-foto-img{
+    max-width: 360px;
+}
+.foto-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foto-container-item{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.foto-container-item:hover{
+    background-color: #eec2ff;
+    transition-duration: 0.5s;
+}
+.gallerey-main-href{
+    text-decoration: none;
+    color: black;
+}
+/*---Конец блока студентов---*/
+/*---Блок предметов---*/
+table{
+    width: 500px;
+    margin: auto;
+}
+table, tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.table-yroki-lineika, .table-yroki-number, .table-yroki-ROV, .obed{
+    font-weight: 700;
+    text-align: center;
+    vertical-align: center;
+}
+.table-yroki-number{
+    background-color: #ecf0f1;
+    height: 30px;
+    width: 30px;
+}
+.table-yroki-lineika{
+    background-color: #d35400;
+}
+.table-yroki-ROV{
+    background-color: #edbb99;
+}
+.table-yroki-name{
+    text-align: center;
+    font-weight: 700;
+}
+.table-yroki-teach{
+    width: 50%;
+}
+.obed{
+    background-color:#f1c40f;
+}
+.table-yroki-teach-solo{
+    text-align: right;
+}
+.table-yroki-teach-doub{
+    text-align: center;
+}
+.title-and-time, .fststolb, .table-eat{
+    height: 30px;
+}
+.title-and-time{
+    background-color: #C4CBD8;
+}
+.fststolb{
+    width: 20%;
+}
+.table-eat{
+    background-color: #9af566;
+    font-weight: 700;
+}
+.student-group-item-img-img{
+    max-height: 217px;
+}
+.student-group-item{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.student-group-item:hover{
+    background-color: #dbdbdb;
+    transition-duration: 0.25s;
+}
+.student-group-container{
+    display: grid;
+    grid-template-columns: auto 20% 20% 20% auto;
+    justify-content: center;
+}
+/*---Конец блока предметов---*/
+@media (max-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+    .navlink{
+        font-size: 18px;
+    }
+    .sitelogo{
+        max-width: 120px;
+    }
+    .college-foto{
+        max-width: 500px;
+    }
+    .foto-groupp{
+        max-width: 610px;
+    }
+    .img-teacher-foto{
+        max-height: 150px;
+    }
+    .name-teacher{
+        font-size: 16px;
+    }
+    .student-group-item-img-img{
+        max-height: 150px;
+    }
+    .student-group-container{
+        grid-template-columns: auto 20% 20% auto;
+    }
+}
+@media (max-width: 790px) {
+    .container{
+        max-width: 790px;
+    }
+    .title-text{
+        font-size: 24px;
+    }
+    .foto-groupp{
+        max-width: 500px;
+    }
+    .sitelogo{
+        max-width: 80px;
+    }
+    .navlink{
+        font-size: 16px;
+    }
+    .citata-item-img-img{
+        max-height: 150px;
+    }
+    .p-text, ul-text-li, .p-text-italy{
+        font-size: 16px;
+    }
+    .img-teacher-foto{
+        max-height: 140px;
+    }
+    .menu-button-drop{
+        max-width: 100px;
+    }
+    .sitelogo{
+        margin-left: 75px;
+    }
+    .nav{
+        margin-right: 50px;
+    }
+    .navlink-drop{
+        font-size: 12px;
+    }
+    .yroki-img{
+        max-width: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        max-width: 550px;
+    }
+    .sitelogo{
+        margin-left: 25px;
+        max-width: 70px;
+    }
+    .menu-button{
+        border-bottom: 2px solid #360050;
+    }
+    .navlink{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .title-text{
+        font-size: 18px;
+    }
+    .h2-zagolovok{
+        font-size: 18px;
+    }
+    .foto-groupp{
+        width: 450px;
+    }
+    .nav{
+        margin-right: 25px;
+    }
+    .college-foto{
+        max-width: 400px;
+    }
+    .student-group-item-img-img{
+        max-height: 120px;
+    }
+    .student-group-container{
+        grid-template-columns: auto 20% auto;
+    }
+    .name-teacher{
+        font-size: 12px;
+    }
+    .p-modal-content-text-title{
+        font-size: 16px;
+        margin-top: 4px;
+    }
+    .p-modal-content-text{
+        font-size: 12px;
+    }
+    .teacher-modal-img{
+       max-height: 250px;
+    }
+    .img-foto-img{
+        max-width: 350px;
+    }
+    .yroki-img{
+        max-width: 350px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        max-width: 460px;
+    }
+    .sitelogo{
+        max-width: 60px;
+        margin-left: 5px;
+    }
+    .menu-button{
+        border-bottom: 1.5px solid #360050;
+        margin-left: 5px;
+    }
+    .navlink{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    .title-text{
+        font-size: 16px;
+    }
+    .foto-groupp{
+        max-width: 400px;
+    }
+    .citata-item-container{
+        display: block;
+    }
+    .citata-item-img-img{
+        max-height: 400px;
+    }
+    .citata-item{
+        max-width: 400px;
+        margin-left: 0px;
+    }
+    .student-group-container{
+        grid-template-columns: auto auto;
+    }
+    .student-group-item-img-img{
+        max-height: 200px;
+    }
+    .teacher-modal__content{
+        min-width: 300px;
+    }
+    .teacher-modal-img{
+       max-height: 200px;
+    }
+    .yroki-img{
+        max-width: 300px;
+    }
+}
